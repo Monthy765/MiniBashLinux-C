@@ -1,4 +1,0 @@
-Error al ejecutar el comando. 
-Permission denied
-Error al ejecutar el comando. 
-Permission denied
