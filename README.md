@@ -40,7 +40,7 @@ Permite encadenar comandos:
 ---
 
 ## 📦 Estructura del proyecto
-
+´´´text
 MiniBashLinux-C/
 │
 ├── src/          # Código fuente (.c)
@@ -66,7 +66,7 @@ MiniBashLinux-C/
 │
 ├── Makefile      # Compilación automática
 └── README.md     # Este documento
-
+´´´
 ---
 
 ## 🔧 Compilación
