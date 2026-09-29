@@ -21,16 +21,16 @@ all: $(OUT)
 
 # Cómo construir el ejecutable
 $(OUT): $(OBJ)
-    $(CC) $(CFLAGS) $(OBJ) $(LIBS) -o $(OUT) -static
+	$(CC) $(CFLAGS) $(OBJ) $(LIBS) -o $(OUT) -static
 
 # Cómo compilar cada .c a .o
 src/%.o: src/%.c
-    $(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Limpiar binarios y objetos
 clean:
-    rm -f $(OBJ) $(OUT)
+	rm -f $(OBJ) $(OUT)
 
 # Limpiar todo (incluye build/)
 distclean: clean
-    rm -rf build/*
+	rm -rf build/*
