@@ -40,33 +40,26 @@ Permite encadenar comandos:
 ---
 
 ## 📦 Estructura del proyecto
-´´´text
+
 MiniBashLinux-C/
-│
 ├── src/          # Código fuente (.c)
 │   ├── myshell.c
-│   ├── jobs.c
-│   └── ...
-│
+│   └── jobs.c
 ├── include/      # Cabeceras (.h)
 │   ├── myshell.h
 │   ├── jobs.h
 │   └── parser.h
-│
 ├── lib/          # Librerías externas
 │   └── libparser.a
-│
 ├── build/        # Ejecutable generado
 │   └── myshell
-│
 ├── test/         # Archivos de prueba
 │   ├── entrada.txt
 │   ├── salida.txt
 │   └── errores.txt
-│
 ├── Makefile      # Compilación automática
-└── README.md     # Este documento
-´´´
+└── README.md     # Documentación principal
+
 ---
 
 ## 🔧 Compilación
