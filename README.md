@@ -14,6 +14,7 @@ Ejemplos:
 - `cat archivo.txt`
 - `grep -i hola archivo.txt`
 - `wc -l archivo.txt`
+- `exit`
 
 ### ✔ Redirecciones
 - Entrada: `comando < archivo`
@@ -30,6 +31,7 @@ Permite encadenar comandos:
 - `cd` — cambiar de directorio
 - `cd ..` — subir al directorio padre
 - `pwd` — mostrar directorio actual
+- `ls` — mostrar los archivos del directorio actual
 
 ### ✔ Procesos en background
 - `sleep 100 &` — ejecuta el proceso en segundo plano
@@ -93,14 +95,15 @@ El ejecutable se generará en: **build/myshell**.
 Para iniciar la mini-shell, se ejecuta el binario generado:
 
 ```bash
-./build/myshell
+./build/myshell 2> test/errores.txt
 ```
 
 ---
 
 ## 🧪 Ejemplos de uso
 
-Una vez dentro de la shell (`MiniBashLinux-C>`), puedes probar los siguientes escenarios utilizando los archivos de la carpeta `test/`:
+Una vez dentro de la shell (`MiniBashLinux-C>`), puedes probar los siguientes escenarios utilizando los archivos de la carpeta `test/`, 
+por lo que para mayor facilidad hacer dentro de la shell `cd /test`:
 
 ### Redirecciones
 ```bash
@@ -125,6 +128,9 @@ pwd
 
 # Volver al directorio anterior
 cd ..
+
+# Ver los archivos del directorio
+ls
 ```
 
 ### Background y jobs
@@ -138,6 +144,13 @@ jobs
 # Recupera el último proceso al primer plano
 fg
 ```
+Para parar el proceso actual => `Ctrl+C`.
+
+### Cerrar la shell
+```bash
+exit
+```
+
 ---
 
 ## 🛠 Requisitos
