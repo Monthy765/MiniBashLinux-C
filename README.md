@@ -1,9 +1,5 @@
 # MiniBashLinux‑C
 
-[![License: MIT](https://shields.io)](https://opensource.org)
-![Platform](https://shields.io)
-![Language](https://shields.io)
-
 Una mini-shell escrita en **C** para ejecutar comandos básicos en Linux, con soporte para redirecciones, pipes, procesos en background y gestión de trabajos. El proyecto a sido desarrollado y probado en un entorno **WSL (Ubuntu)** y compilado mediante **Makefile**.
 
 ---
