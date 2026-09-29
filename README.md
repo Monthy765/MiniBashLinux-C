@@ -1,5 +1,10 @@
 # MiniBashLinux‑C
-Mini shell escrita en C para ejecutar comandos básicos en Linux, con soporte para redirecciones, pipes, procesos en background y gestión de trabajos. Proyecto desarrollado y probado en entorno WSL (Ubuntu) y compilado mediante Makefile.
+
+[![License: MIT](https://shields.io)](https://opensource.org)
+![Platform](https://shields.io)
+![Language](https://shields.io)
+
+Una mini-shell escrita en **C** para ejecutar comandos básicos en Linux, con soporte para redirecciones, pipes, procesos en background y gestión de trabajos. El proyecto a sido desarrollado y probado en un entorno **WSL (Ubuntu)** y compilado mediante **Makefile**.
 
 ---
 
@@ -26,16 +31,16 @@ Permite encadenar comandos:
 - `cat entrada.txt | grep -i Hola | sort | uniq`
 
 ### ✔ Comandos internos
-- `cd` — cambiar de directorio  
-- `cd ..` — subir al directorio padre  
-- `pwd` — mostrar directorio actual  
+- `cd` — cambiar de directorio
+- `cd ..` — subir al directorio padre
+- `pwd` — mostrar directorio actual
 
 ### ✔ Procesos en background
 - `sleep 100 &` — ejecuta el proceso en segundo plano
 
 ### ✔ Gestión de trabajos
-- `jobs` — lista procesos en background  
-- `fg` — trae el último proceso al foreground  
+- `jobs` — lista procesos en background
+- `fg` — trae el último proceso al foreground
 
 ---
 
@@ -64,6 +69,17 @@ MiniBashLinux-C/
 
 ---
 
+## 🛠 Requisitos del Sistema
+
+Antes de compilar, asegúrate de tener instaladas las herramientas de desarrollo esenciales en tu entorno Linux/WSL:
+
+```bash
+sudo apt update
+sudo apt install build-essential gcc make
+```
+
+---
+
 ## 🔧 Compilación
 
 El proyecto incluye un **Makefile**, por lo que solo necesitas ejecutar:
@@ -72,12 +88,14 @@ El proyecto incluye un **Makefile**, por lo que solo necesitas ejecutar:
 make
 ```
 
-El ejecutable se generará en:
-**build/myshell**
+El ejecutable se generará en: **build/myshell**.
 
 ---
 
 ## ▶️ Ejecución
+
+Para iniciar la mini-shell, se ejecuta el binario generado:
+
 ```bash
 ./build/myshell
 ```
@@ -86,13 +104,18 @@ El ejecutable se generará en:
 
 ## 🧪 Ejemplos de uso
 
+Una vez dentro de la shell (`MiniBashLinux-C>`), puedes probar los siguientes escenarios utilizando los archivos de la carpeta `test/`:
+
 ### Redirecciones
 ```bash
+# Redirigir la entrada desde un archivo y guardar el resultado
 ./build/myshell < test/entrada.txt > test/salida.txt
+
+# Capturar los mensajes de error en un archivo independiente
 ./build/myshell 2> test/errores.txt
 ```
 
-### Pipes
+### Tuberías (Pipes)
 ```bash
 cat < entrada.txt | grep -i Hola > salida.txt
 cat < entrada.txt | grep Hola | wc -l > salida.txt
@@ -101,14 +124,22 @@ cat < entrada.txt | grep -i Hola | sort | uniq > salida.txt
 
 ### Comandos internos
 ```bash
+# Ver el directorio actual
 pwd
+
+# Volver al directorio anterior
 cd ..
 ```
 
 ### Background y jobs
 ```bash
+# Lanza un proceso largo en segundo plano
 sleep 100 &
+
+# Consulta la lista de trabajos activos
 jobs
+
+# Recupera el último proceso al primer plano
 fg
 ```
 ---
@@ -121,9 +152,9 @@ fg
 ---
 
 ## 📄 Licencia
-Este proyecto puede distribuirse bajo licencia MIT (opcional).
+Este proyecto puede distribuirse bajo **Licencia MIT**. Para más detalles, consulta el archivo [LICENSE](LICENSE) adjunto en este repositorio.
 
 ---
 
 ## 👤 Autor
-Desarrollado por Monthy765.
+Desarrollado por **Monthy765** ([@Monthy765](https://github.com/Monthy765)).
