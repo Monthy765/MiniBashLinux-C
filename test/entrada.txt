@@ -1,0 +1,5 @@
+Hola, esto es la entrada.
+Segunda linea de la entrada.
+Hola, esto es la entrada.
+Otra linea más.
+hola, avanza arriba.
