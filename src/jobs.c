@@ -152,7 +152,7 @@ void fg(int job_id) {
     }
 
     // Ignorar señales de terminal para evitar que el shell reciba señales de control
-    signal(SIGTTOU, SIG_IGN); // Ignorar señales de terminal
+    signal(SIGTTOU, SIG_IGN);   // Ignorar señales de terminal
     signal(SIGTTIN, SIG_IGN);
     signal(SIGINT, SIG_DFL);    // Restaurar el manejador de interrupción
     signal(SIGQUIT, SIG_DFL);   // Restaurar el manejador de salida
