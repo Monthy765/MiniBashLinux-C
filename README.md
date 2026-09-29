@@ -41,6 +41,7 @@ Permite encadenar comandos:
 
 ## 📦 Estructura del proyecto
 
+```text
 MiniBashLinux-C/
 ├── src/          # Código fuente (.c)
 │   ├── myshell.c
@@ -59,6 +60,7 @@ MiniBashLinux-C/
 │   └── errores.txt
 ├── Makefile      # Compilación automática
 └── README.md     # Documentación principal
+```
 
 ---
 
@@ -71,7 +73,7 @@ make
 ```
 
 El ejecutable se generará en:
-    build/myshell
+**build/myshell**
 
 ---
 
